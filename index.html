@@ -5,13 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rick & Morty</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@1.14.0/dist/full.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <div id="root">
-        <!-- Don't change this file manually.
-            Use javaScript to render items on DOM. -->
+        <div class="container mx-auto">
+            <div class="py-4 artboard artboard-demo bg-base-200">
+                <ul class="menu py-3 shadow-lg bg-base-100 rounded-box">
+                  <li class="menu-title">
+                    <span>
+                          Menu Title
+                        </span>
+                  </li> 
+                  <li>
+                    <a>Item without icon</a>
+                  </li> 
+                  <li>
+                    <a>Item with icon
+                    </a>
+                  </li> 
+                  <li>
+                    <a>Item with icon</a>
+                  </li>
+                </ul>
+              </div>              
+        </div>
     </div>
-    <script type="module" src="scripts/script.js"></script>
+    <script type="module" src="scripts/index.js"></script>
 </body>
 </html>
