@@ -13,16 +13,18 @@ async function createSidebar(node, containerName, linkCallback) {
   `
   );
   const html = `<div class="py-4 artboard artboard-demo bg-base-200">
-              <div class="flex" id="${containerName}">
-              <div class="flex-1">
-            <ul class="menu py-3 shadow-lg bg-base-100 rounded-box" id=${listId}>
-              <li class="menu-title"></li>
-                <span> Episodes list </span>
-              </li>
-              ${episodesHTML.join("")}
-            </ul>
-            <button class="btn btn-outline mt-6" id=${buttonId}>Load more</button> 
-        </div>
+    <div class="flex" id="${containerName}">
+      <div class="flex-1">
+        <ul class="menu py-3 shadow-lg bg-base-100 rounded-box" id=${listId}>
+          <li class="menu-title"></li>
+            <span> Episodes list </span>
+          </li>
+          ${episodesHTML.join("")}
+        </ul>
+        <button class="btn btn-outline mt-6" id=${buttonId}>Load more</button>
+      </div>
+    </div>
+  </div>
   `;
   const newDiv = document.createElement("div");
   newDiv.innerHTML = html;
